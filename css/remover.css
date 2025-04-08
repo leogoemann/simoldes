@@ -1,43 +1,99 @@
 /* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav  {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+}
 
-  main{
-    padding-left: 200px;
-    
-  }
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav  {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+main{
+  padding-left: 200px;
+  
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input{
+width: 100%;
+background-color: rgb(46, 44, 44);
+border: 0;
+outline: 0;
+padding: 20px 15px;
+border-radius: 15px;
+color: white;
+font-size: 18px;
+}
+
+form input::placeholder{
+color: white;
+}
+
+form .btn_remover input{
+width: 530px;
+background-color: #BBBFC1;
+color: black;
+font-weight: 700;
+cursor: pointer;
+transition: .2s;
+margin-top: 10px;
+}
+
+form .btn_reset input{
+  width: 530px;
+  background-color: #BBBFC1;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+  margin-top: 10px;
+}
+
+form .btn_remover input:hover{
+box-shadow: 0 0 20px red;
+background-color: red;
+transform: scale(1.05);
+}
+
+form .btn_reset input:hover{
+  box-shadow: 0 0 20px white;
+  transform: scale(1.05);
+}

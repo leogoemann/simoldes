@@ -9,7 +9,7 @@
 <body>
     <div class="sidenav">
         <a href="main.html">Home</a>
-        <a href="lista.html">Lista</a>
+        <a href="lista.html">Listas</a>
         <a href="criar.html">Criar</a>
         <a href="remover.html">Remover</a>
         <a href="#">Sair</a>
@@ -17,14 +17,15 @@
 
     <main>
         <form>
-            <label for="fname">Molde</label><br>
-            <input type="number" id="fname" name="fname"><br>
-            <label for="lname">Referência</label><br>
-            <input type="number" id="lname" name="lname"><br>
-            <label for="lname">Quantidade</label><br>
-            <input type="number" id="lname" name="lname"><br> <br>
-            <input type="submit">
-            <input type="reset">
+            <input type="number" id="fname" name="fname" placeholder="MOLDE">
+            <input type="number" id="lname" name="lname" placeholder="REFERÊNCIA">
+            <input type="number" id="lname" name="lname" placeholder="QUANTIDADE">
+            <div class="btn_enviar">
+                <input type="submit" value="Criar">
+            </div>
+            <div class="btn_reset">
+                <input type="reset" value="Redefinir inserções">
+            </div>
           </form>
     </main>
 </body>
