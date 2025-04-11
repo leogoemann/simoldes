@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fluxo Afacad', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex; /* centraliza ou alinha itens vertical e horizontalmente de maneira simples*/
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /*Centraliza os itens verticalmente */
+    background-color: #000000b7;
+}
+
+/* div principal*/
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 5px 5px #00000079;  /* sombra horizontal e vertical, desfoque da sombra e a cor dela*/
+}
+
+/* imagem */
+
+.box-imagem {
+    width: 58%;
+    display: flex; /*facilita o alinhamento de elementos internos.*/
+    justify-content: center; /*Alinha o conteúdo horizontalmente no centro da .box-imagem.*/
+    align-items: center; /*Junto com o display: flex, essas duas regras centralizam qualquer coisa dentro da div, tanto na horizontal quanto na vertical.*/
+    background-color: rgb(255, 255, 255);
+    animation: slideLeft 1.5s ease-out; /* AQUI vai a animação */
+}
+
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-500px); } /*totalmente transparente.*/
+    to { opacity: 1; transform: translateX(0); } /*move o elemento 50 pixels para a esquerda (fora da tela, visualmente).*/
+}
+
+.box-imagem img{
+    width: 30em;
+}
+
+/* formulario, inputs, label e icon */
+
+.formulario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*alinhar os itens em coluna*/
+    background-color: #1c5846;
+    padding: 3rem;
+}
+
+.title {
+    display: flex;
+    height: 2cm;
+}
+
+.formulario button{
+    background-color:#043d1190;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 16em;
+    margin-left: 4em;
+    cursor: pointer; /*para aparecer a maozinha ao passa o mause em cima */
+    color: #ffffff;
+}
+
+.formulario button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.form h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    background-color:  #043d11;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1.1rem;
+    width: 20em;
+    position: relative; /* necessário para posicionar o ícone */
+}
+
+.grupo-input input {
+    margin: 0.5rem 0;
+    padding: 0.8rem 1.4rem 0.8rem 3.2rem; /* espaço à esquerda para o ícone */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #918e8e;
+    margin-top: 10px;
+}
+
+.grupo-input i {
+    position: absolute;
+    left: 1.2rem;
+    top: 62%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 1rem;
+}

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+  font-family: 'Fluxo Afacad', sans-serif;
+}
+
+
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -6,7 +13,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: #0E4828; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px;
   }
@@ -16,7 +23,7 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
   }
   
@@ -36,7 +43,6 @@
     .sidenav  {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
 
 
 /* header */
@@ -76,7 +82,7 @@ section.inicio .flex{
 }
 
 .txt1 span{
-    color: #BBBFC1;
+    color: #0E4828;
 }
 
 .text{
@@ -85,7 +91,7 @@ section.inicio .flex{
 }
 
 .text span{
-    color: #BBBFC1;
+    color: #0E4828;
 }
 
   

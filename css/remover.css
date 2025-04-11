@@ -1,4 +1,10 @@
-/* The sidebar menu */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+  font-family: 'Fluxo Afacad', sans-serif;
+}
+
+
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 160px; /* Set the width of the sidebar */
@@ -6,7 +12,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
+  background-color: #0E4828; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 10px;
 }
@@ -16,7 +22,7 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
 }
 
@@ -69,7 +75,7 @@ color: white;
 
 form .btn_remover input{
 width: 530px;
-background-color: #BBBFC1;
+background-color: #0E4828;
 color: black;
 font-weight: 700;
 cursor: pointer;
@@ -79,7 +85,7 @@ margin-top: 10px;
 
 form .btn_reset input{
   width: 530px;
-  background-color: #BBBFC1;
+  background-color: #0E4828;
   color: black;
   font-weight: 700;
   cursor: pointer;
@@ -94,6 +100,7 @@ transform: scale(1.05);
 }
 
 form .btn_reset input:hover{
+  background-color: #043d1190;
   box-shadow: 0 0 20px white;
   transform: scale(1.05);
 }
